@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="/dist/styles.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <main>
+    <section class="signUpIntro">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    </section>
+    <section class="signUpSection">
+      <p class="signUpSection__Promo">Try it free 7 days <span>then $20/mo. thereafter</span></p>
+      <div class="signUpSection__Form">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" >
+        <span id="errorMessageFirstName">First Name cannot be empty</span>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" >
+        <span id="errorMessageLastName">Last Name cannot be empty</span>
+        <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" >
+        <span id="errorMessageEmail">Looks like this is not an email</span>
+        <input type="password" id="password" name="password" placeholder="Password" >
+        <span id="errorMessagePassword">Password cannot be empty</span>
+        <button onclick="btnClaimFreeTrial()">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Damiel</a>.
+    </p>
+  </footer>
+
+  <script src="/app/js/main.js"></script>
+</body>
+</html>

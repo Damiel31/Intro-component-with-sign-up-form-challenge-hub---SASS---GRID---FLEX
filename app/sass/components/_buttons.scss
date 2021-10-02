@@ -1,0 +1,18 @@
+button {
+    color: #ffffff;
+    background-color: $green;
+    border: none;
+    border-radius: 0.25rem;
+    height: 3.125rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 0.125rem;
+    box-shadow: hsl(154, 50%, 45%) 0px 5px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: hsl(154, 59%, 56%);
+    }
+    
+}
